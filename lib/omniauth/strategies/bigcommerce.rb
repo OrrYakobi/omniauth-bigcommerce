@@ -5,7 +5,7 @@ module OmniAuth
     class BigCommerce < OmniAuth::Strategies::OAuth2
       option :name, 'bigcommerce'
       option :provider_ignores_state, true
-      option :scope, 'users_basic_information'
+      option :scope, nil
       option :authorize_options, [:scope, :context]
       option :token_options, [:scope, :context]
       option :client_options, {
